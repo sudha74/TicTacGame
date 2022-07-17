@@ -20,3 +20,10 @@ public class TicTacGame {
             board[i] = ' ';
         }
     }
+    static void getLetter(){
+        System.out.println("Choose the letter(X or O)");
+        playerLetter = scr.next().toUpperCase().charAt(0);
+        computerLetter = (playerLetter=='X')?'O':'X';
+        System.out.println("Your Letter is "+ playerLetter);
+        System.out.println("Computer Letter is "+ computerLetter);
+    }
